@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+
+	<script src="js/uikit.js"></script>
+
+	<!--ChatBot-->
+	<script type="module">
+		import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.2/dist/web.js'
+
+		Typebot.initBubble({
+			typebot: "power-corantes-p8fw6xq",
+			theme: {
+				button: { backgroundColor: "#0042DA" },
+				chatWindow: { backgroundColor: "#ffffff" },
+			},
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<div class="preloader">
+		<div class="spinner"></div>
+	</div><!-- /.preloader -->
+
+
+	<header class="header home-page-one">
+		<div class="container">
+			<div class="appilo-menu clearfix">
+				<nav>
+					<div class="wrapper">
+						<div class="logo"><a href="index.html"><img src="/img/logo.png" alt=""></a></div>
+						<input type="radio" name="slider" id="menu-btn">
+						<input type="radio" name="slider" id="close-btn">
+						<ul class="nav-links">
+							<label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+							<li><a href="about.html">A Empresa</a></li>
+							<li>
+								<a href="#" class="desktop-item">Nossos Corantes</a>
+								<input type="checkbox" id="showDrop">
+								<label for="showDrop" class="mobile-item">Nossos Corantes</label>
+								<ul class="drop-menu">
+                                    <li><a href="basedeagua.html">Corante a base de água</a></li>
+                                    <li><a href="basedealcool.html">Corantes a base de álcool</a></li>
+                                    <li><a href="basedesolvente.html">Corantes a base solvente</a></li>
+								</ul>
+							</li>
+							<li><a href="support.html">Suporte</a></li>
+							<li><a href="contact.html">Contato</a></li>
+						</ul>
+						<div class="sign-up-btn">
+							<a href="form.html" class="sign-btn">Descubra o corante ideal</a>
+						</div>
+						<label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+
+
+		<div class="uk-section uk-position-relative uk-position-z-index"
+			data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+			<div class="uk-container">
+				<h1 class="uk-text-center uk-margin-remove-top">Como podemos te ajudar?</h1>
+				<div class="hero-search uk-margin-medium-top">
+					<form class="uk-search uk-search-default uk-width-1-1" name="search-hero" onsubmit="return false;">
+						<span data-uk-search-icon="ratio: 1.2"></span>
+						<input id="search-hero" class="uk-search-input uk-form-large uk-border-rounded" type="search"
+							placeholder="Ache a resposta para suas dúvidas" autocomplete="off" data-minchars="1"
+							data-maxitems="30">
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="uk-section uk-section-muted">
+		<div class="uk-container">
+			<div class="uk-child-width-1-2@m uk-grid-match- uk-grid-small" data-uk-grid>
+				<div>
+					<div class="uk-card uk-card uk-card-default uk-card-hover uk-card-body uk-inline uk-border-rounded">
+						<a class="uk-position-cover" href="#"></a>
+						<div class="uk-grid-small" data-uk-grid>
+							<div class="uk-width-auto uk-text-primary uk-flex uk-flex-middle">
+								<span data-uk-icon="icon: cog; ratio: 2.6"></span>
+							</div>
+							<div class="uk-width-expand">
+								<h3 class="uk-card-title uk-margin-remove uk-text-primary">Amostra Grátis</h3>
+								<p class="uk-text-muted uk-margin-remove">Enviaremos o corante
+									gratuitamente para teste.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card uk-card uk-card-default uk-card-hover uk-card-body uk-inline uk-border-rounded">
+						<a class="uk-position-cover" href="#"></a>
+						<div class="uk-grid-small" data-uk-grid>
+							<div class="uk-width-auto uk-text-primary uk-flex uk-flex-middle">
+								<span data-uk-icon="icon: users; ratio: 2.6"></span>
+							</div>
+							<div class="uk-width-expand">
+								<h3 class="uk-card-title uk-margin-remove uk-text-primary">Frete Grátis</h3>
+								<p class="uk-text-muted uk-margin-remove">Enviamos através
+									dos correios ou transportadora.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card uk-card uk-card-default uk-card-hover uk-card-body uk-inline uk-border-rounded">
+						<a class="uk-position-cover" href="#"></a>
+						<div class="uk-grid-small" data-uk-grid>
+							<div class="uk-width-auto uk-text-primary uk-flex uk-flex-middle">
+								<span data-uk-icon="icon: settings; ratio: 2.6"></span>
+							</div>
+							<div class="uk-width-expand">
+								<h3 class="uk-card-title uk-margin-remove uk-text-primary">Desenvolvimento de Cores</h3>
+								<p class="uk-text-muted uk-margin-remove">Nosso time criará novas cores de
+									acordo com a sua necessidade.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card uk-card uk-card-default uk-card-hover uk-card-body uk-inline uk-border-rounded">
+						<a class="uk-position-cover" href="#"></a>
+						<div class="uk-grid-small" data-uk-grid>
+							<div class="uk-width-auto uk-text-primary uk-flex uk-flex-middle">
+								<span data-uk-icon="icon: credit-card; ratio: 2.6"></span>
+							</div>
+							<div class="uk-width-expand">
+								<h3 class="uk-card-title uk-margin-remove uk-text-primary">Métodos de Pagamento</h3>
+								<p class="uk-text-muted uk-margin-remove">Aceitamos uma variedade de métodos de
+									pagamento.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="uk-section uk-section-muted">
+		<div class="uk-container uk-container-small">
+			<h2 class="uk-text-center">Perguntas frequentes</h2>
+			<ul class="uk-margin-medium-top" data-uk-accordion="multiple: true">
+				<li>
+					<a class="uk-accordion-title uk-box-shadow-hover-small" href="#">Como faço para escolher a cor certa
+						para o meu projeto?
+					</a>
+					<div class="uk-article-content uk-accordion-content link-primary">
+						<p>Em nosso site, oferecemos amostras virtuais e descrições detalhadas para ajudar na escolha.
+							Caso tenha dúvidas, nossa equipe de suporte está pronta para fornecer orientações
+							personalizadas.</p>
+					</div>
+				</li>
+				<li>
+					<a class="uk-accordion-title uk-box-shadow-hover-small" href="#">Quais métodos de pagamento são
+						aceitos pela Power?
+					</a>
+					<div class="uk-article-content uk-accordion-content link-primary">
+						<p>Aceitamos uma variedade de métodos de pagamento,
+							incluindo cartões de crédito, transferência bancária, e oferecemos
+							opções de parcelamento sem juros para facilitar suas compras.</p>
+					</div>
+				</li>
+				<li>
+					<a class="uk-accordion-title uk-box-shadow-hover-small" href="#">Como faço para rastrear meu pedido
+						após a compra?
+					</a>
+					<div class="uk-article-content uk-accordion-content link-primary">
+						<p>Assim que seu pedido for despachado, você receberá um e-mail com as informações de
+							rastreamento.
+							Isso permite que você acompanhe o status da entrega até que seus corantes cheguem com
+							segurança às suas mãos.</p>
+
+					</div>
+				</li>
+				<li>
+					<a class="uk-accordion-title uk-box-shadow-hover-small" href="#">Vocês oferecem suporte técnico para
+						o uso dos corantes?</a>
+					<div class="uk-article-content uk-accordion-content link-primary">
+						<p> Sim, nosso suporte técnico está disponível 24/7 para ajudar com qualquer dúvida relacionada
+							ao uso dos corantes. Entre em contato por e-mail, chat ou telefone para assistência
+							imediata.</p>
+					</div>
+				</li>
+				<li>
+					<a class="uk-accordion-title uk-box-shadow-hover-small" href="#">Quais são as opções de envio
+						disponíveis e quanto tempo leva para receber meu pedido?</a>
+					<div class="uk-article-content uk-accordion-content link-primary">
+						<p>Enviamos para todo o Brasil via correios ou transportadora. O prazo de entrega pode variar de
+							acordo com sua localização, mas garantimos processamento rápido para que seus corantes
+							cheguem o mais breve possível.</p>
+
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="uk-section uk-section-muted">
+		<div class="uk-container">
+			<h2 class="uk-text-center">Não achou a resposta?</h2>
+			<p class="uk-text-muted uk-text-center uk-text-lead">Nosso time está preparado para te ajudar!</p>
+			<div class="uk-margin-medium-top uk-flex-center uk-text-center uk-margin-medium-top uk-grid-small"
+				data-uk-grid>
+				<div>
+					<div class="uk-card">
+						<img class="uk-avatar uk-border-circle" src="https://via.placeholder.com/200x200"
+							alt="Evan Wells" />
+						<h5 class="uk-margin-remove-bottom uk-margin-small-top">Daniel Martinez</h5>
+						<p class="uk-article-meta uk-margin-xsmall-top">CEO</p>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card">
+						<img class="uk-avatar uk-border-circle" src="https://via.placeholder.com/200x200"
+							alt="John Brown" />
+						<h5 class="uk-margin-remove-bottom uk-margin-small-top">Daniel Martinez</h5>
+						<p class="uk-article-meta uk-margin-xsmall-top">CEO</p>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card">
+						<img class="uk-avatar uk-border-circle" src="https://via.placeholder.com/200x200"
+							alt="Sara Galen" />
+						<h5 class="uk-margin-remove-bottom uk-margin-small-top">Daniel Martinez</h5>
+						<p class="uk-article-meta uk-margin-xsmall-top">CEO</p>
+					</div>
+				</div>
+
+			
+			</div>
+			<div class="uk-margin-medium-top uk-text-center"
+				data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+				<a class="uk-button uk-button-primary uk-border-rounded" href="contact.html">Entrar em contato</a>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="subscribe-section">
+			<div class="container">
+				<div class="sec-title text-center">
+					<h2>Descubra agora o corante perfeito</h2>
+					<p>Nossa ferramenta online permite que você, em poucos segundos, <br />comece a economizar até 70%
+						com corantes e pigmentos.<br /> E o melhor: 100% grátis.</p>
+				</div><!-- /.sec-title -->
+				<form action="#" class="subscribe-form clearfix">
+					<div class="left-content float-left clearfix">
+						<i class="far fa-envelope"></i>
+						<input type="text" placeholder="seumelhor@email.com" />
+					</div><!-- /.left-content -->
+					<div class="right-content float-right">
+						<button class="thm-btn" type="submit"><span>Começar</span></button>
+					</div><!-- /.right-content -->
+				</form><!-- /.subscribe-form -->
+			</div><!-- /.container -->
+		</div><!-- /.subscribe-section -->
+		<div class="footer-widget-wrapper">
+			<div class="container">
+				<div class="row masonary-layout">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="footer-widget about-widget">
+							<a href="index.html"><img src="img/logo.png" alt="Awesome Image" class="logofooter" /></a>
+							<p>Desde 1995, fornecendo Corantes e Pigmentos para todo o Brasil.</p>
+							<div class="social">
+								<a href="#" class="fab fa-facebook-f"></a><!--
+							--><a href="#" class="fab fa-twitter"></a><!--
+							--><a href="#" class="fab fa-google-plus-g"></a><!--
+						--><a href="#" class="fab fa-instagram"></a>
+							</div><!-- /.social -->
+						</div><!-- /.footer-widget -->
+					</div><!-- /.col-md-3 -->
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="footer-widget contact-widget">
+							<div class="title">
+								<h3>Contato</h3>
+							</div><!-- /.title -->
+							<p><span>Telefone:</span> (11) 2605-4533</p>
+							<p><span>Endereço:</span> Rua Jacinto José de Araujo, 317 Parque São Jorge SP <br /> CEP:
+								03087-020</p>
+						</div><!-- /.footer-widget -->
+					</div><!-- /.col-md-3 -->
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="footer-widget links-widget">
+							<div class="title">
+								<h3>Corantes</h3>
+							</div><!-- /.title -->
+							<ul class="list-inline link-list">
+								<li><a href="#">Corantes para água</a></li><!--
+							-->
+								<li><a href="#">Corantes para água</a></li><!--
+							-->
+								<li><a href="#">Corantes para água</a></li><!--
+					</ul><!-- /.link-list -->
+						</div><!-- /.footer-widget -->
+					</div><!-- /.col-md-3 -->
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="footer-widget tweets-widget">
+							<div class="title">
+								<h3>Novidades</h3>
+							</div><!-- /.title -->
+							<div class="tweets-carousel owl-theme owl-carousel">
+								<div class="item">
+									<div class="single-tweet">
+										<p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do eius mod
+											tempor incididunt.</p>
+										<a href="#">@JohnDoe</a>
+									</div><!-- /.single-tweet -->
+								</div><!-- /.item -->
+								<div class="item">
+									<div class="single-tweet">
+										<p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do eius mod
+											tempor incididunt.</p>
+										<a href="#">@JohnDoe</a>
+									</div><!-- /.single-tweet -->
+								</div><!-- /.item -->
+								<div class="item">
+									<div class="single-tweet">
+										<p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do eius mod
+											tempor incididunt.</p>
+										<a href="#">@JohnDoe</a>
+									</div><!-- /.single-tweet -->
+								</div><!-- /.item -->
+								<div class="item">
+									<div class="single-tweet">
+										<p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do eius mod
+											tempor incididunt.</p>
+										<a href="#">@JohnDoe</a>
+									</div><!-- /.single-tweet -->
+								</div><!-- /.item -->
+							</div><!-- /.tweets-carousel -->
+						</div><!-- /.footer-widget -->
+					</div><!-- /.col-md-3 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.footer-widget-wrapper -->
+		<div class="footer-bottom" id="footer-id">
+			<div class="container">
+				<div class="footer-copyright">
+					<div class="float-left left-content">
+						<p>© 2023, Power Corantes <span class="sep">|</span> <a href="#">Política de Privacidade</a>
+							<span class="sep">|</span> <a href="#">Sobre a Empresa</a></p>
+					</div><!-- /.float-left left-content -->
+					<div class="float-right right-content">
+						<p>Todos os direitos reservados.</p>
+					</div><!-- /.float-right -->
+				</div>
+			</div><!-- /.container -->
+		</div><!-- /.footer-bottom -->
+	</footer><!-- /.footer -->
+
+
+
+
+	<script src="js/jquery.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/isotope.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/awesomplete.js"></script>
+	<script src="js/custom.js"></script>
+
+
+</body>
+
+</html>

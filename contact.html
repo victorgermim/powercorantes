@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+
+	<script src="js/uikit.js"></script>
+
+	<!--ChatBot-->
+	<script type="module">
+		import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.2/dist/web.js'
+
+		Typebot.initBubble({
+			typebot: "power-corantes-p8fw6xq",
+			theme: {
+				button: { backgroundColor: "#0042DA" },
+				chatWindow: { backgroundColor: "#ffffff" },
+			},
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<div class="preloader">
+		<div class="spinner"></div>
+	</div><!-- /.preloader -->
+
+
+  <header class="header home-page-one">
+		<div class="container">
+			<div class="appilo-menu clearfix">
+				<nav>
+					<div class="wrapper">
+						<div class="logo"><a href="index.html"><img src="/img/logo.png" alt=""></a></div>
+						<input type="radio" name="slider" id="menu-btn">
+						<input type="radio" name="slider" id="close-btn">
+						<ul class="nav-links">
+							<label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+							<li><a href="about.html">A Empresa</a></li>
+							<li>
+								<a href="#" class="desktop-item">Nossos Corantes</a>
+								<input type="checkbox" id="showDrop">
+								<label for="showDrop" class="mobile-item">Nossos Corantes</label>
+								<ul class="drop-menu">
+									<li><a href="#">Corante a base de água</a></li>
+									<li><a href="#">Corantes a base de álcool</a></li>
+									<li><a href="#">Corantes a base solvente</a></li>
+								</ul>
+							</li>
+							<li><a href="support.html">Suporte</a></li>
+							<li><a href="contact.html">Contato</a></li>
+						</ul>
+						<div class="sign-up-btn">
+							<a href="form.html" class="sign-btn">Descubra o corante ideal</a>
+						</div>
+						<label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+<div class="uk-section uk-section-muted">
+  <div class="uk-container mt-5">
+    <div class="uk-background-default uk-border-rounded uk-box-shadow-small">
+      <div class="uk-container uk-container-xsmall uk-padding-large">
+        <article class="uk-article">
+          <h1 class="uk-article-title">Entre em contato</h1>
+          <div class="uk-article-content">
+            <p class="uk-text-lead uk-text-muted">Confie em nossos especialistas, entre em contato com nosso time que vamos fazer de tudo para te ajudar.</p>
+            <form class="uk-form-stacked uk-margin-medium-top">
+              <div class="uk-margin-bottom">
+                <label class="uk-form-label" for="name">Nome</label>
+                <div class="uk-form-controls">
+                  <input id="name" class="uk-input uk-border-rounded" name="name" type="text" required="">
+                </div>
+              </div>
+              <div class="uk-margin-bottom">
+                <label class="uk-form-label" for="_replyto">Email</label>
+                <div class="uk-form-controls">
+                  <input id="_replyto" class="uk-input uk-border-rounded" name="_replyto" type="email" required="">
+                </div>
+              </div>
+              <div class="uk-margin-bottom">
+                <label class="uk-form-label" for="_subject">Assunto</label>
+                <div class="uk-form-controls">
+                  <input id="_subject" class="uk-input uk-border-rounded" name="_subject" type="text">
+                </div>
+              </div>
+              <div class="uk-margin-bottom">
+                <label class="uk-form-label" for="message">Mensagem</label>
+                <div class="uk-form-controls">
+                  <textarea id="message" class="uk-textarea uk-border-rounded" name="message" rows="5" minlength="10"
+                    required=""></textarea>
+                </div>
+              </div>
+              <div class="uk-text-center">
+                <input class="uk-button uk-button-primary uk-border-rounded" type="submit" value="Enviar">
+              </div>
+            </form>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="subscribe-section">
+    <div class="container">
+      <div class="sec-title text-center">
+        <h2>Descubra agora o corante perfeito</h2>
+        <p>Nossa ferramenta online permite que você, em poucos segundos, <br />comece a economizar até 70%
+          com corantes e pigmentos.<br /> E o melhor: 100% grátis.</p>
+      </div><!-- /.sec-title -->
+      <form action="#" class="subscribe-form clearfix">
+        <div class="left-content float-left clearfix">
+          <i class="far fa-envelope"></i>
+          <input type="text" placeholder="seumelhor@email.com" />
+        </div><!-- /.left-content -->
+        <div class="right-content float-right">
+          <button class="thm-btn" type="submit"><span>Começar</span></button>
+        </div><!-- /.right-content -->
+      </form><!-- /.subscribe-form -->
+    </div><!-- /.container -->
+  </div><!-- /.subscribe-section -->
+  <div class="footer-widget-wrapper">
+    <div class="container">
+      <div class="row masonary-layout">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="footer-widget about-widget">
+            <a href="index.html"><img src="img/logo.png" alt="Awesome Image" class="logofooter" /></a>
+            <p>Desde 1995, fornecendo Corantes e Pigmentos para todo o Brasil.</p>
+            <div class="social">
+              <a href="#" class="fab fa-facebook-f"></a><!--
+            --><a href="#" class="fab fa-twitter"></a><!--
+            --><a href="#" class="fab fa-google-plus-g"></a><!--
+          --><a href="#" class="fab fa-instagram"></a>
+            </div><!-- /.social -->
+          </div><!-- /.footer-widget -->
+        </div><!-- /.col-md-3 -->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="footer-widget contact-widget">
+            <div class="title">
+              <h3>Contato</h3>
+            </div><!-- /.title -->
+            <p><span>Telefone:</span> (11) 2605-4533</p>
+            <p><span>Endereço:</span> Rua Jacinto José de Araujo, 317 Parque São Jorge SP <br /> CEP:
+              03087-020</p>
+          </div><!-- /.footer-widget -->
+        </div><!-- /.col-md-3 -->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="footer-widget links-widget">
+            <div class="title">
+              <h3>Corantes</h3>
+            </div><!-- /.title -->
+            <ul class="list-inline link-list">
+              <li><a href="#">Corantes para água</a></li><!--
+            -->
+              <li><a href="#">Corantes para água</a></li><!--
+            -->
+              <li><a href="#">Corantes para água</a></li><!--
+        </ul><!-- /.link-list -->
+          </div><!-- /.footer-widget -->
+        </div><!-- /.col-md-3 -->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="footer-widget tweets-widget">
+            <div class="title">
+              <h3>Novidades</h3>
+            </div><!-- /.title -->
+            <div class="tweets-carousel owl-theme owl-carousel">
+              <div class="item">
+                <div class="single-tweet">
+                  <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do eius mod
+                    tempor incididunt.</p>
+                  <a href="#">@JohnDoe</a>
+                </div><!-- /.single-tweet -->
+              </div><!-- /.item -->
+              <div class="item">
+                <div class="single-tweet">
+                  <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do eius mod
+                    tempor incididunt.</p>
+                  <a href="#">@JohnDoe</a>
+                </div><!-- /.single-tweet -->
+              </div><!-- /.item -->
+              <div class="item">
+                <div class="single-tweet">
+                  <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do eius mod
+                    tempor incididunt.</p>
+                  <a href="#">@JohnDoe</a>
+                </div><!-- /.single-tweet -->
+              </div><!-- /.item -->
+              <div class="item">
+                <div class="single-tweet">
+                  <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do eius mod
+                    tempor incididunt.</p>
+                  <a href="#">@JohnDoe</a>
+                </div><!-- /.single-tweet -->
+              </div><!-- /.item -->
+            </div><!-- /.tweets-carousel -->
+          </div><!-- /.footer-widget -->
+        </div><!-- /.col-md-3 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.footer-widget-wrapper -->
+  <div class="footer-bottom" id="footer-id">
+    <div class="container">
+      <div class="footer-copyright">
+        <div class="float-left left-content">
+          <p>© 2023, Power Corantes <span class="sep">|</span> <a href="#">Política de Privacidade</a>
+            <span class="sep">|</span> <a href="#">Sobre a Empresa</a></p>
+        </div><!-- /.float-left left-content -->
+        <div class="float-right right-content">
+          <p>Todos os direitos reservados.</p>
+        </div><!-- /.float-right -->
+      </div>
+    </div><!-- /.container -->
+  </div><!-- /.footer-bottom -->
+</footer><!-- /.footer -->
+
+
+
+
+<script src="js/jquery.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/awesomplete.js"></script>
+<script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
