@@ -1,6 +1,6 @@
 // script.js
 function criarDivs(quantidade, cor, nome) {
-    const coresContainer = document.getElementById('cores');
+    const coresContainer = document.getElementById('cores1');
 
     for (let i = 0; i < quantidade; i++) {
         const divPrincipal = document.createElement('div');
@@ -24,5 +24,5 @@ function criarDivs(quantidade, cor, nome) {
 }
 
 // Exemplo de uso
-criarDivs(3, 'red', 'Vermelho');
-criarDivs(3, 'blue', 'Azul');
+criarDivs(12, 'red', 'Vermelho');
+criarDivs(12, 'blue', 'Azul');
