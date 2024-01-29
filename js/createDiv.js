@@ -1,28 +1,18 @@
-// script.js
-function criarDivs(quantidade, cor, nome) {
-    const coresContainer = document.getElementById('cores1');
+function criarDivs(colorList=[]) {
+    let container = document.getElementById('cores1');
+    let newDiv = "";
 
-    for (let i = 0; i < quantidade; i++) {
-        const divPrincipal = document.createElement('div');
-        divPrincipal.classList.add('cor-element');
+    colorList.forEach(e => {
+        let cor = e.cor;
+        let name = e.nome;
 
-        const squareContainer = document.createElement('div');
-        squareContainer.classList.add('square-container');
-        squareContainer.style.backgroundColor = cor;
+        newDiv += `<div class='cor-element'>
+                        <div class='square-container' style='background-color:${cor}'></div>
+                        <div class='text-container'>
+                            <p>${name}</p>
+                        </div>
+                    </div>`;
+    });
 
-        const textContainer = document.createElement('div');
-        textContainer.classList.add('text-container');
-        const texto = document.createElement('p');
-        texto.textContent = nome;
-        textContainer.appendChild(texto);
-
-        divPrincipal.appendChild(squareContainer);
-        divPrincipal.appendChild(textContainer);
-
-        coresContainer.appendChild(divPrincipal);
-    }
+    container.innerHTML = newDiv;
 }
-
-// Exemplo de uso
-criarDivs(12, 'red', 'Vermelho');
-criarDivs(12, 'blue', 'Azul');
